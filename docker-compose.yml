@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  node:
+    build: ./Node
+    ports:
+      - "8080:8080"
+    container_name: node_interview
+    image: node_interview
+  react:
+    build: ./React
+    ports:
+      - "3000:3000"
+    container_name: react_interview
+    image: react_interview
